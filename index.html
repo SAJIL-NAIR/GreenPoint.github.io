@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenPoint - Recycle Smart</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>♻ GreenPoint</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">What is Recycling?</a></li>
+                <li><a href="#categories">Recyclable Items</a></li>
+                <li><a href="#benefits">Why Recycle?</a></li>
+                <li><a href="#fun">Recycling is Fun!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>What is Recycling?</h2>
+        <p>Recycling means turning waste into reusable materials. It helps reduce pollution and saves natural resources.</p>
+    </section>
+
+    <section id="categories">
+        <h2>Categories of Recyclable Items</h2>
+        <ul>
+            <li>Plastics ♳</li>
+            <li>Paper & Cardboard ♼</li>
+            <li>Metals ♻</li>
+            <li>Glass 🥛</li>
+        </ul>
+    </section>
+
+    <section class="scanner-card">
+        <h2>Scan Your Item</h2>
+        <button onclick="scanItem()">📸 Scan Now</button>
+        <p id="result"></p>
+    </section>
+
+    <section id="benefits">
+        <h2>Why Recycling is Helpful</h2>
+        <p>Recycling reduces pollution, conserves energy, and protects wildlife. Every action counts!</p>
+    </section>
+
+    <section id="fun">
+        <h2>Recycling Can Be Fun!</h2>
+        <p>Get creative with upcycling, join recycling challenges, and track your eco-friendly habits.</p>
+    </section>
+
+    <footer>
+        <p>Made with ♻ by GreenPoint Team</p>
+    </footer>
+
+    <script>
+        function scanItem() {
+            const resultElement = document.getElementById("result");
+            resultElement.innerText = "📸 More features coming soon!";
+            resultElement.style.opacity = "0";
+            setTimeout(() => {
+                resultElement.style.transition = "opacity 0.5s ease-in-out";
+                resultElement.style.opacity = "1";
+            }, 100);
+        }
+    </script>
+</body>
+</html>
